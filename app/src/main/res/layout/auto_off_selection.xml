@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:backgroundTint="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/off15"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/circle"
+                    android:gravity="center"
+                    android:shadowColor="@android:color/white"
+                    android:shadowRadius="10.0"
+                    android:text="@string/m15"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/off30"
+                android:layout_marginStart="42dp"
+                android:layout_marginTop="22dp"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@drawable/circle"
+                android:gravity="center"
+                android:shadowColor="@android:color/white"
+                android:shadowRadius="10.0"
+                android:text="@string/m30"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/off60"
+                android:layout_marginStart="62dp"
+                android:layout_marginTop="22dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/circle"
+                android:gravity="center"
+                android:shadowColor="@android:color/white"
+                android:shadowRadius="10.0"
+                android:text="@string/m60"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/off90"
+                android:layout_marginStart="82dp"
+                android:layout_marginTop="22dp"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:background="@drawable/circle"
+                android:gravity="center"
+                android:shadowColor="@android:color/white"
+                android:shadowRadius="10.0"
+                android:text="@string/m90"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+</ScrollView>

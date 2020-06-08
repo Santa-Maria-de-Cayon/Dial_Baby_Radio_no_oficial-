@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="dial.babyradio">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application
+        android:name=".cadena.App"
+        android:allowBackup="true"
+        android:description="@string/app_name_des"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <activity android:name=".AutoOffSelection" />
+        <activity android:name=".OffSound" />
+        <activity android:name=".AlarmRadioBuiltin" />
+
+        <meta-data
+            android:name="asset_statements"
+            android:resource="@string/asset_statements" />
+
+        <activity android:name=".DialBabyRadio">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Browser">
+            <tools:validation testUrl="https://desarrollo-web-app-cantabria.blogspot.com" />
+
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="desarrollo-web-app-cantabria.blogspot.com"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".cadena.ServiceDialBabyRadio" />
+        <service android:name=".cadena.ServceRadioBudilnik" />
+        <!--
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-1208057699352262~3885337441" />
+        -->
+        <receiver android:name=".cadena.ReceiverRadioAlarm" android:enabled="true" />
+        <receiver android:name=".cadena.BroadcastReceiverPhone" android:enabled="true" android:exported="true">
+            <intent-filter>
+               <action android:name="android.intent.action.PHONE_STATE" />
+           </intent-filter>
+        </receiver>
+        <receiver android:name=".cadena.AutoOffReceiver" android:enabled="true" />
+
+
+    </application>
+</manifest>

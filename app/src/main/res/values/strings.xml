@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Dial Baby Radio</string>
+    <string name="ads">¡ Que tengas un buen día !</string>
+    <string name="title_home">Dial Baby Radio</string>
+    <string name="title_dashboard">Dial Baby Radio</string>
+    <string name="title_notifications">Dial Baby Radio</string>
+    <string name="app_name_des">Dial Baby Radio</string>
+    <string name="asset_statements" translatable="false">[{ \"include\": \"https://diseno-web-cantabria.web.app/.well-known/assetlinks.json\" }]</string>
+
+
+    <string name="comment">Deje un comentario</string>
+    <string name="share">Compartir</string>
+    <string name="barmaleika">Las emisoras de radio en España</string>
+    <string name="buzoter">Scrapbooking Boozer</string>
+    <string name="rus_radio">Las estaciones de radio de Rusia</string>
+    <string name="disableNot">Desactivar las notificaciones</string>
+    <string name="set_time_toAlarm">Poner la hora de la alarma</string>
+    <string name="delemiter">:</string>
+    <string name="cancel">Cancelar</string>
+    <string name="go">Instalar</string>
+    <string name="titleDialogText">Poner la hora de la alarma</string>
+    <string name="use">El reloj despertador está puesto</string>
+    <string name="installlition">El despertador está puesto</string>
+    <string name="offSound">Apagar el sonido</string>
+    <string name="message">El sonido apagado</string>
+    <string name="offRadio">Apagar el despertador</string>
+    <string name="eng_radio">Las estaciones de radio en Inglaterra</string>
+    <string name="auto_off">auto apagado</string>
+    <string name="m15">15</string>
+    <string name="m90">90</string>
+    <string name="m60">60</string>
+    <string name="m30">30</string>
+</resources>
